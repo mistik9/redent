@@ -1,0 +1,22 @@
+.page__content {
+  box-sizing: border-box;
+  margin: 56px 0 92px 0;
+}
+
+@media screen and (max-width: 1124px) {
+  .page__content {
+    margin: 48px 0 92px 0;
+  }
+}
+
+@media screen and (max-width: 984px) {
+  .page__content {
+    margin: 48px 0px 88px;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .page__content {
+    margin: 48px 0px 64px;
+  }
+}

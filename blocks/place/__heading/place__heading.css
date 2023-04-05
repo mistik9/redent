@@ -1,0 +1,17 @@
+.place__heading {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 170%;
+  letter-spacing: 2px;
+  margin: 0 0 12px;
+  color: #aaaaaa;
+  text-transform: uppercase;
+  align-self: flex-end;
+}
+
+@media screen and (max-width: 1124px) {
+  .place__heading {
+    line-height: 12px;
+  }
+}

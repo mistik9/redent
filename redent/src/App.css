@@ -14,20 +14,26 @@
   max-width: 142px;
   min-height: 33px;
 }
+
 .header__items {
   list-style: none;
 }
 
 .about__img {
-  background-image: url(./image/1.jpeg);
+  background-image: url(./image/pic9.jpg);
   min-height: 400px;
   background-size: cover;
   margin-bottom: 40px;
 }
 
 .content {
+  margin: 60px 0;
   display: grid;
-    grid-row-gap: 92px;
+
+}
+
+.about {
+  position: relative;
 }
 
 .section__title {
@@ -38,6 +44,17 @@
   margin-bottom: 40px;
 }
 
+.section__title_about {
+  position: absolute;
+  top: 70px;
+  left: 30px;
+}
+
+.section__subtitle {
+  position: absolute;
+  top: 120px;
+  left: 30px;
+}
 
 .section__text {
   font-weight: 400;
@@ -47,14 +64,69 @@
   margin-bottom: 33px;
   max-width: 690px;
 }
+
 .photo-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(284px, 1fr));
-  gap: 16px;
   box-sizing: border-box;
   max-width: 100%;
 }
+
+.photo-grid_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 16px;
+  grid-auto-flow: dense;
+}
+
 .photo-grid__item {
-  max-width: 100%;
   object-fit: cover;
+  max-width: 282px;
+}
+
+.service {
+  width: 100%;
+  display: grid;
+
+
+  box-sizing: border-box;
+}
+
+.service__item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap:32px;
+}
+
+.service__subtitle {
+  margin:0;
+  font-size: 32px;
+ 
+}
+
+.service__img {
+  width: 100%;
+  object-fit: cover;
+  min-height: 424px;
+}
+
+.service__text {
+  margin:0;
+
+}
+.layout__body {
+  margin: 0 auto;
+}
+
+.price__list-item{
+list-style: none;
+display: flex;
+justify-content: space-between;
+border-bottom: solid 1px gray;
+}
+
+.price__value{
+  margin: 0;
+}
+.price__name{
+  margin: 0;
 }

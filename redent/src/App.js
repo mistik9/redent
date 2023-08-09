@@ -78,16 +78,9 @@ function App() {
             <img class="service__img" src={implant} alt="кариес"></img>
             <ul class="service__list">
               <h3 class="service__subtitle">Имплантация </h3>
-              <li class="service__list-item">Одномоментная имплантация
-              
-              
-                            </li>
-              <li class="service__list-item">
-                All-on-4
-              </li>
-              <li class="service__list-item">
-                Двухэтапная имплантация
-              </li>
+              <li class="service__list-item">Одномоментная имплантация</li>
+              <li class="service__list-item">All-on-4</li>
+              <li class="service__list-item">Двухэтапная имплантация</li>
             </ul>
           </div>
           <div class="service__item">

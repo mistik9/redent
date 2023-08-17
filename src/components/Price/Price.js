@@ -5,6 +5,7 @@ import casts from "./image/icon5.png";
 import imp from "./image/icon7.png";
 import other from "./image/icon.png";
 import pulpitis from "./image/icon1.png";
+import "./price.css";
 
 function Price() {
     return (

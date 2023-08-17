@@ -1,3 +1,4 @@
+import "./Reviews.css"
 
 function  Reviews () {
     return(

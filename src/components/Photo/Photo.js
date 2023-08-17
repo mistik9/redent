@@ -6,6 +6,7 @@ import photo6 from "./image/6.jpg";
 import photo7 from "./image/7.jpg";
 import photo8 from "./image/8.jpg";
 import photo10 from "./image/12.jpg";
+import "./Photo.css"
 
 function Photo() {
     return (

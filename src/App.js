@@ -1,33 +1,28 @@
 import React from "react";
 import "./App.css";
-import Header from "./Header";
-import Reviews from "./Reviews";
-import Price from "./Price";
-import Service from "./Service";
-import Photo from "./Photo";
-import About from "./About";
-import Contacts from "./Contacts";
-import Footer from "./Footer";
-import ScrollButton from "./ScrollBtn";
-import AnchorLink from "react-anchor-link-smooth-scroll";
+import Header from "./components/Header/Header";
+import Reviews from "./components/Reviews/Reviews";
+import Price from "./components/Price/Price";
+import Service from "./components/Service/Service";
+import Photo from "./components/Photo/Photo";
+import About from "./components/About/About";
+import Contacts from "./components/Contacts/Contacts";
+import Footer from "./components/Footer/Footer";
+import ScrollButton from "./components/ScrollBtn/ScrollBtn";
+
 
 function App() {
+  const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+
+  function openMenu() {
+    setIsMenuOpen(true)
+  }
 
   return (
     <div className="page">
-      <Header />
-      <nav className="nav">
-        <div className="nav__menu" >
-          <AnchorLink href='#about' className="nav__menu-item">О клинике</AnchorLink>
-          <AnchorLink href='#photo' className="nav__menu-item">Фото</AnchorLink>
-          <AnchorLink href='#service' className="nav__menu-item">Услуги</AnchorLink>
-          <AnchorLink href='#price' className="nav__menu-item">Стоимость услуг</AnchorLink>
-          <AnchorLink href='#reviews' className="nav__menu-item">Отзывы</AnchorLink>
-          <AnchorLink href='#contacts' className="nav__menu-item">Контакты</AnchorLink>
-        </div>
-      </nav>
+      <Header openMenu={openMenu} isMenuOpen={isMenuOpen}/>
+     
       <main className="content">
-
         <About />
         <Photo />
         <Service />
@@ -35,12 +30,10 @@ function App() {
         <Reviews />
         <Contacts />
       </main>
-      <ScrollButton/>
+      <ScrollButton />
       <Footer />
     </div>
   );
 }
 
 export default App;
-
-

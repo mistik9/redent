@@ -1,0 +1,25 @@
+
+.price__list {
+    padding: 0 40px;
+  }
+  
+  .price__img {
+    max-width: 50px;
+    margin-right: 14px;
+  }
+  
+  .price__list-item {
+    list-style: none;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    border-bottom: solid 1px gray;
+  }
+  
+  .price__value {
+    margin: 0;
+  }
+  
+  .price__name {
+    margin: 0;
+  }

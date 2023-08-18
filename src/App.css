@@ -1,5 +1,5 @@
 .body {
-  width: 100%; 
+  width: 100%;
   max-width: 1280px;
   margin: 0 auto;
 }
@@ -9,7 +9,6 @@
   width: 100%;
   margin: 0 auto;
   background-color: #f8f9fa;
- 
 }
 
 /* #43a1d0 #3e4b94*/
@@ -51,8 +50,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 163%;
-  margin: 20px 40px;
-
+  padding: 20px 80px;
   max-width: 690px;
 }
 
@@ -63,6 +61,5 @@
 @media screen and (max-width: 1000px) {
   .section__text {
     margin: 20px 20px;
- 
   }
 }

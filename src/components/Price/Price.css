@@ -18,6 +18,7 @@
   
   .price__value {
     margin: 0;
+    white-space: nowrap;
   }
   
   .price__name {

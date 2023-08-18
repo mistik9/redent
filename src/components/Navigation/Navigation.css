@@ -16,7 +16,7 @@
   padding: 20px 0;
 }
 .nav__close {
-
+  display: none;
     border: none;
     padding: 0;
     background-image: url(../../image/close.svg);
@@ -107,5 +107,9 @@
   }
   .nav__menu-line {
     display: block;
+  }
+  .nav__close {
+    display: block;
+ 
   }
 }

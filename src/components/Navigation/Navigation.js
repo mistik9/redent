@@ -1,11 +1,13 @@
 import "./Navigation.css"
 import AnchorLink from "react-anchor-link-smooth-scroll";
 
-function Navigation() {
+function Navigation({ isMenuOpen, openMenu, closeMenu  }) {
+
     return(
-        <div>
+
         <nav className="nav">
-        <div className={isMenuOpen ? "nav__list nav__list_hide " : "nav__list"}>
+        <div className={!isMenuOpen ? "nav__list nav__list_hide  " : "nav__list"}>
+        <button className="nav__close" type="button" onClick={closeMenu}></button>
           <AnchorLink href="#about" className="nav__list-item">
             О клинике
           </AnchorLink>
@@ -25,8 +27,7 @@ function Navigation() {
             Контакты
           </AnchorLink>
         </div>
-      </nav>
-      <button
+        <button
         className={isMenuOpen ? "nav__menu nav__menu_hide " : "nav__menu"}
         onClick={openMenu}
       >
@@ -34,7 +35,8 @@ function Navigation() {
         <span className="nav__menu-line"></span>
         <span className="nav__menu-line"></span>
       </button>
-      </div>
+      </nav>
+
     )
 }
 export default Navigation;

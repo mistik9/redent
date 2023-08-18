@@ -38,6 +38,7 @@
   .header__btn:hover {
     background: linear-gradient(32deg, #3e4b94, #43a1d0);
   }
+  
   @media screen and (max-width: 1000px) {
     .header {
       grid-template-columns: auto 1fr auto;

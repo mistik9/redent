@@ -1,0 +1,9 @@
+.about {
+    position: relative;
+}
+.about__img {
+    background-image: url(../../image/pic9.jpg);
+    min-height: 400px;
+    background-size: cover;
+    margin-bottom: 40px;
+  }

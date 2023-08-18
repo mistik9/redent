@@ -5,3 +5,25 @@
     gap: 20px;
     align-items: center;
   }
+
+  
+  @media screen and (max-width: 1000px) {
+    .footer {
+      grid-template-columns: auto 1fr ;
+      padding: 20px 20px 0 20px;
+      gap: 10px;
+      justify-items: center;
+    }
+  
+    .header__items {
+      padding: 0;
+    }
+  
+    .header__items_duty {
+      display: none;
+    }
+  
+    .header__items_adress {
+      display: none;
+    }
+}

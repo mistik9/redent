@@ -1,11 +1,11 @@
-import photo from "./image/2.jpg";
-import photo3 from "./image/3.jpg";
-import photo4 from "./image/4.jpg";
-import photo5 from "./image/5.jpg";
-import photo6 from "./image/6.jpg";
-import photo7 from "./image/7.jpg";
-import photo8 from "./image/8.jpg";
-import photo10 from "./image/12.jpg";
+import photo from "../../image/2.jpg";
+import photo3 from "../../image/3.jpg";
+import photo4 from "../../image/4.jpg";
+import photo5 from "../../image/5.jpg";
+import photo6 from "../../image/6.jpg";
+import photo7 from "../../image/7.jpg";
+import photo8 from "../../image/8.jpg";
+import photo10 from "../../image/12.jpg";
 import "./Photo.css"
 
 function Photo() {

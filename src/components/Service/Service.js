@@ -1,9 +1,10 @@
-import caries from "./image/pic6.jpeg";
-import implant from "./image/pic7.jpg";
-import crown from "./image/pic10.jpg";
-import cast from "./image/pic4.jpeg";
-import surgery from "./image/pic13.jpg";
-import cleaning from "./image/pic14.jpg";
+import caries from "../../image/pic6.jpeg";
+import implant from "../../image/pic7.jpg";
+import crown from "../../image/pic10.jpg";
+import cast from "../../image/pic4.jpeg";
+import surgery from "../../image/pic13.jpg";
+import cleaning from "../../image/pic14.jpg";
+import "./Service.css"
 
 function Service() {
     return (

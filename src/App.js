@@ -9,6 +9,7 @@ import About from "./components/About/About";
 import Contacts from "./components/Contacts/Contacts";
 import Footer from "./components/Footer/Footer";
 import ScrollButton from "./components/ScrollBtn/ScrollBtn";
+import Navigation from "./components/Navigation/Navigation";
 
 
 function App() {
@@ -17,11 +18,14 @@ function App() {
   function openMenu() {
     setIsMenuOpen(true)
   }
+  function closeMenu() {
+    setIsMenuOpen(false)
+  }
 
   return (
     <div className="page">
-      <Header openMenu={openMenu} isMenuOpen={isMenuOpen}/>
-     
+      <Header />
+     <Navigation closeMenu={closeMenu} openMenu={openMenu} isMenuOpen={isMenuOpen}/>
       <main className="content">
         <About />
         <Photo />

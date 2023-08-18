@@ -23,3 +23,20 @@
   .price__name {
     margin: 0;
   }
+
+  @media screen and (max-width: 1000px) {
+    .price__list {
+      padding: 0 20px;
+    }
+
+  }
+  @media screen and (max-width: 500px) {
+ 
+    .price__list-item {
+   font-size: 14px;
+    }
+    .price__img {
+      max-width: 30px;
+      margin-right: 1px;
+    }
+  }

@@ -1,8 +1,8 @@
-import logo from "../src/image/logo.png";
+import logo from "../../image/logo.png";
 import "./Header.css"
 import AnchorLink from "react-anchor-link-smooth-scroll";
 
-function Header({ isMenuOpen, openMenu }) {
+function Header() {
   return (
     <header className="header">
       <a href="#">

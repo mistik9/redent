@@ -10,7 +10,7 @@ import Contacts from "./components/Contacts/Contacts";
 import Footer from "./components/Footer/Footer";
 import ScrollButton from "./components/ScrollBtn/ScrollBtn";
 import Navigation from "./components/Navigation/Navigation";
-import { photos } from "./components/utils/const";
+import { photos } from "./utils/const";
 console.log(photos)
 
 
@@ -25,20 +25,23 @@ function App() {
     setIsMenuOpen(false)
   }
 
+
   return (
     <div className="page">
       <Header />
-     <Navigation closeMenu={closeMenu} openMenu={openMenu} isMenuOpen={isMenuOpen}/>
-    
+      <Navigation closeMenu={closeMenu} openMenu={openMenu} isMenuOpen={isMenuOpen} />
+
       <main className="content">
         <About />
-        <Photo photos={photos}/>
+        <Photo photos={photos} />
         <Service />
         <Price />
         <Reviews />
         <Contacts />
-
       </main>
+      <div className="map">
+   
+      </div>
       <ScrollButton />
       <Footer />
     </div>

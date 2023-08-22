@@ -50,8 +50,9 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 163%;
-  padding: 20px 80px 0 20px;
+  padding: 20px 20px 0 80px;
   max-width: 690px;
+  margin:0;
 }
 
 .layout__body {

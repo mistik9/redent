@@ -5,7 +5,7 @@ import whatsapp from "../../image/icons8-whatsapp-48.png"
 
 function Footer() {
     return(
-        <footer className="footer">
+        <footer className="footer" id="footer">
           <a href="#">
         <img className="header__logo" src={logo} alt="Логотип" />
         </a>

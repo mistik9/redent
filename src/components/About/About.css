@@ -5,5 +5,7 @@
     background-image: url(../../image/pic9.jpg);
     min-height: 400px;
     background-size: cover;
+    background-position: center;
     margin-bottom: 40px;
   }
+

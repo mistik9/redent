@@ -7,7 +7,7 @@
   }
 
   
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 780px) {
     .footer {
       grid-template-columns: auto 1fr ;
       padding: 20px 20px 0 20px;
@@ -15,15 +15,5 @@
       justify-items: center;
     }
   
-    .header__items {
-      padding: 0;
-    }
-  
-    .header__items_duty {
-      display: none;
-    }
-  
-    .header__items_adress {
-      display: none;
-    }
+
 }

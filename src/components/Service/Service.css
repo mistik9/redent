@@ -1,75 +1,84 @@
 .service {
-    width: 100%;
-    display: grid;
-    box-sizing: border-box;
-    row-gap: 20px;
-    padding: 0 40px;
+  width: 100%;
+  display: grid;
+  box-sizing: border-box;
+  row-gap: 20px;
+  padding: 0 40px;
+}
+
+.service__img {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  box-shadow: 0 3px 22px 0 rgb(0 0 0 / 15%);
+  width: 100%;
+  object-fit: cover;
+  min-height: 424px;
+}
+
+.service__item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  border-radius: 10px;
+  box-shadow: 0 3px 22px 0 rgb(0 0 0 / 15%);
+}
+
+.service__list-item_span {
+  font-weight: 500;
+}
+
+.service__list {
+  list-style: none;
+}
+
+.service__list-item {
+  margin: 0 20px 10px 0;
+}
+
+.service__subtitle {
+  color: #3e4b94;
+  margin: 0 0 20px 0;
+  font-size: 32px;
+}
+
+.service__text {
+  margin: 0;
+}
+
+@media screen and (max-width: 1000px) {
+  .service {
+    padding: 0 20px;
   }
-  
+
+  .service__item {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 18px;
+    border-radius: 10px;
+    box-shadow: 0 3px 22px 0 rgb(0 0 0 / 15%);
+  }
   .service__img {
     border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0;
     box-shadow: 0 3px 22px 0 rgb(0 0 0 / 15%);
     width: 100%;
     object-fit: cover;
     min-height: 424px;
   }
-  
+}
+
+@media screen and (max-width: 500px) {
+  .service {
+    padding: 0 10px;
+  }
+
   .service__item {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 32px;
-    border-radius: 10px;
-    box-shadow: 0 3px 22px 0 rgb(0 0 0 / 15%);
+    gap: 10px;
   }
-  
-  .service__list-item_span {
-    font-weight: 500;
-  }
-  
-  .service__list {
-    list-style: none;
-  }
-  
-  .service__list-item {
-    margin: 0 20px 10px 0;
-  }
-  
+
   .service__subtitle {
-    color: #3e4b94;
     margin: 0 0 20px 0;
-    font-size: 32px;
+    font-size: 25px;
   }
-  
-
-  
-  .service__text {
-    margin: 0;
-  }
-
-  @media screen and (max-width: 1000px) {
-    .service {
-      padding: 0 20px;
-    }
-
-    .service__item {
-      display: grid;
-      grid-template-columns:  1fr;
-      gap: 18px;
-      border-radius: 10px;
-      box-shadow: 0 3px 22px 0 rgb(0 0 0 / 15%);
-    }
-    .service__img {
-
-      border-top-left-radius: 10px;
-      border-top-right-radius: 10px;
-      border-bottom-left-radius: 0;
-      box-shadow: 0 3px 22px 0 rgb(0 0 0 / 15%);
-      width: 100%;
-      object-fit: cover;
-      min-height: 424px;
-
-    }
-
-  }
-  
+}

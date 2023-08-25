@@ -6,6 +6,10 @@
   grid-column-start: 1;
   grid-column-end: 5;
   position: relative;
+  background: linear-gradient(284deg, #3e4b94, #43a1d0);
+  box-shadow: 0 3px 22px 0 rgb(0 0 0 / 25%);
+  transition: all 0.5s ease-out;
+
 }
 
 .nav__list {
@@ -14,7 +18,9 @@
   list-style: none;
   margin: 0 auto;
   padding: 20px 0;
+
 }
+
 .nav__close {
   display: none;
   border: none;
@@ -29,9 +35,7 @@
   position: absolute;
   right: 10px;
   top: 10px;
-}
 
-.nav__list_hide {
 }
 
 .nav__list-item {
@@ -45,10 +49,15 @@
   margin-left: 40px;
   cursor: pointer;
   margin-left: 20px;
+  transition: all 0.5s ease-out;
 }
 
 .nav__list-item:first-child {
   margin: 0;
+}
+
+.nav__list-item:hover {
+  text-decoration: underline;
 }
 
 .nav__menu {
@@ -56,10 +65,12 @@
   position: absolute;
   right: 18px;
   top: 18px;
+
 }
 
 .nav__menu_hide {
   display: none;
+
 }
 
 .nav__menu-line {

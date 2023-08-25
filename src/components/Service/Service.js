@@ -89,7 +89,7 @@ function Service() {
                     </li>
                     <li className="service__list-item">
                         <span className="service__list-item_span">
-                            Бюгельное протезирование - 
+                            Бюгельное протезирование -
                         </span>
                         главное отличие бюгельного протеза от обычного в том, что
                         искусственные зубы крепятся не к пластмассовой пластинке,
@@ -118,7 +118,7 @@ function Service() {
                 <ul className="service__list">
                     <h3 className="service__subtitle">Профессиональная чистка зубов</h3>
                     <li className="service__list-item">
-                        Удаление твердого зубного камня при помощи ультразвук
+                        Удаление твердого зубного камня при помощи ультразвука
                     </li>
                     <li className="service__list-item">
                         Полировка зубов дентальной профессиональной пастой

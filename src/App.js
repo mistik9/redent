@@ -11,12 +11,9 @@ import Footer from "./components/Footer/Footer";
 import ScrollButton from "./components/ScrollBtn/ScrollBtn";
 import Navigation from "./components/Navigation/Navigation";
 import { photos } from "./utils/const";
-console.log(photos)
-
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
-
 
   function openMenu() {
     setIsMenuOpen(true)
@@ -24,7 +21,6 @@ function App() {
   function closeMenu() {
     setIsMenuOpen(false)
   }
-
 
   return (
     <div className="page">
@@ -39,9 +35,6 @@ function App() {
         <Reviews />
         <Contacts />
       </main>
-      <div className="map">
-   
-      </div>
       <ScrollButton />
       <Footer />
     </div>

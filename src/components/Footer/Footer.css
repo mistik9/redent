@@ -1,19 +1,16 @@
 .footer {
-    display: grid;
-    grid-template-columns: 1fr auto auto auto;
-    padding: 40px 20px 0 20px;
-    gap: 20px;
-    align-items: center;
+  display: grid;
+  grid-template-columns: 1fr auto auto auto;
+  padding: 40px 20px 0 20px;
+  gap: 20px;
+  align-items: center;
+}
+
+@media screen and (max-width: 780px) {
+  .footer {
+    grid-template-columns: auto 1fr;
+    padding: 20px 20px 0 20px;
+    gap: 10px;
+    justify-items: center;
   }
-
-  
-  @media screen and (max-width: 780px) {
-    .footer {
-      grid-template-columns: auto 1fr ;
-      padding: 20px 20px 0 20px;
-      gap: 10px;
-      justify-items: center;
-    }
-  
-
 }

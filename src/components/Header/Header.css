@@ -42,6 +42,7 @@
   background: linear-gradient(284deg, #3e4b94, #43a1d0);
   box-shadow: 0 3px 22px 0 rgb(0 0 0 / 25%);
   transition: all 0.5s ease-out;
+  
 }
 
 .header__btn:hover {
@@ -68,10 +69,29 @@
   .header__items_duty {
     display: none;
   }
+  .header__item_call {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+  }
+  .header__btn {
+    max-width: 110px;
+    font-size: 14px;
+    padding: 0 20px;
+  }
 }
 
 @media screen and (max-width: 400px) {
+  .header {
+    padding: 10px 10px 0 10px;
+  }
+
   .header__items_adress {
     display: none;
   }
+  .header__logo {
+    max-width: 130px;
+ 
+  }
+
 }

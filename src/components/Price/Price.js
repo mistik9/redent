@@ -16,51 +16,51 @@ function Price() {
       <ul className="price__list">
         <img className="price__img" src={therapy} alt="лечение" />
         {price_therapy.map(i =>
-          <li class="price__list-item">
+          <li className="price__list-item" key={i.name}>
             <p calss="price__name">{i.name}</p>
-            <p class="price__value"> {i.cost}</p>
+            <p className="price__value"> {i.cost}</p>
           </li>
         )}
         <img className="price__img" src={pulpitis} alt="лечение"></img>
         {price_pulpitis.map(i =>
-          <li class="price__list-item">
+          <li className="price__list-item"key={i.name}>
             <p calss="price__name">{i.name}</p>
-            <p class="price__value"> {i.cost}</p>
+            <p className="price__value"> {i.cost}</p>
           </li>
         )}
         <img className="price__img" src={clean} alt="проф гигиена"></img>
         {price_pulpitis.map(i =>
-          <li class="price__list-item">
+          <li className="price__list-item" key={i.name}>
             <p calss="price__name">{i.name}</p>
-            <p class="price__value"> {i.cost}</p>
+            <p className="price__value"> {i.cost}</p>
           </li>
         )}
         <img className="price__img" src={surg} alt="хирургия"></img>
         {price_surgury.map(i =>
-          <li class="price__list-item">
+          <li className="price__list-item" key={i.name}>
             <p calss="price__name">{i.name}</p>
-            <p class="price__value"> {i.cost}</p>
+            <p className="price__value"> {i.cost}</p>
           </li>
         )}
         <img className="price__img" src={casts} alt="протезирование"></img>
         {price_casts.map(i =>
-          <li class="price__list-item">
+          <li className="price__list-item" key={i.name}>
             <p calss="price__name">{i.name}</p>
-            <p class="price__value"> {i.cost}</p>
+            <p className="price__value"> {i.cost}</p>
           </li>
         )}
         <img className="price__img" src={imp} alt="импланты"></img>
         {price_implant.map(i =>
-          <li class="price__list-item">
+          <li className="price__list-item" key={i.name}>
             <p calss="price__name">{i.name}</p>
-            <p class="price__value"> {i.cost}</p>
+            <p className="price__value"> {i.cost}</p>
           </li>
         )}
         <img className="price__img" src={other} alt="другое"></img>
         {price_other.map(i =>
-          <li class="price__list-item">
+          <li className="price__list-item" key={i.name}>
             <p calss="price__name">{i.name}</p>
-            <p class="price__value"> {i.cost}</p>
+            <p className="price__value"> {i.cost}</p>
           </li>
         )}
       </ul>

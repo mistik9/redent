@@ -1,9 +1,9 @@
-import caries from "../../image/pic6.jpeg";
+import caries from "../../image/pic17.jpg";
 import implant from "../../image/pic7.jpg";
-import crown from "../../image/pic10.jpg";
-import cast from "../../image/pic4.jpeg";
+import crown from "../../image/pic15.jpg";
+import cast from "../../image/pic5.jpeg";
 import surgery from "../../image/pic13.jpg";
-import cleaning from "../../image/pic14.jpg";
+import cleaning from "../../image/pic16.jpg";
 import "./Service.css"
 
 function Service() {
@@ -11,7 +11,7 @@ function Service() {
         <section className="service content__section " id="service">
             <h2 className="section__title">Услуги</h2>
             <div className="service__item">
-                <img className="service__img" src={caries} alt="имплантация"></img>
+                <img className="service__img" src={caries} alt="кариес"></img>
                 <ul className="service__list">
                     <h3 className="service__subtitle">Террапия(лечение)</h3>
                     <li className="service__list-item">
@@ -29,7 +29,7 @@ function Service() {
                 </ul>
             </div>
             <div className="service__item">
-                <img className="service__img" src={implant} alt="кариес"></img>
+                <img className="service__img" src={implant} alt="имплантация"></img>
                 <ul className="service__list">
                     <h3 className="service__subtitle">Имплантация </h3>
                     <li className="service__list-item">
@@ -105,7 +105,7 @@ function Service() {
                 </ul>
             </div>
             <div className="service__item">
-                <img className="service__img" src={surgery} alt="ортопедия"></img>
+                <img className="service__img" src={surgery} alt="хирургия"></img>
                 <ul className="service__list">
                     <h3 className="service__subtitle">Хирургия</h3>
                     <li className="service__list-item">
@@ -114,7 +114,7 @@ function Service() {
                 </ul>
             </div>
             <div className="service__item">
-                <img className="service__img" src={cleaning} alt="ортопедия"></img>
+                <img className="service__img" src={cleaning} alt="профгигиена"></img>
                 <ul className="service__list">
                     <h3 className="service__subtitle">Профессиональная чистка зубов</h3>
                     <li className="service__list-item">

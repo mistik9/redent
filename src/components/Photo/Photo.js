@@ -5,7 +5,8 @@ import FsLightbox from "fslightbox-react";
 
 function Photo({ photos }) {
     const [toggler, setToggler] = React.useState(false);
-    const lightBoxSoure = photos.map(photo => photo.link.href)
+    const lightBoxSoure = photos.map((photo, key) => photo.link.href )
+    console.log(lightBoxSoure)
 
     return (
         <section className="photo-grid content__section" id="photo">
@@ -15,14 +16,14 @@ function Photo({ photos }) {
                     toggler={toggler}
                     sources={lightBoxSoure}
                 />
-                {photos.map((photo =>
+                {photos.map((photo, key) =>
                     <>
                         <button className="photo-grid__btn" onClick={() => setToggler(!toggler)} >
                             <img className="photo-grid__item" src={photo.link} key={photo.link} alt={photo.name}
                             />
                         </button>
                     </>
-                ))}
+                )}
             </div>
         </section>
     )

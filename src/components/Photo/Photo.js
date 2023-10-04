@@ -5,8 +5,8 @@ import FsLightbox from "fslightbox-react";
 
 function Photo({ photos }) {
     const [toggler, setToggler] = React.useState(false);
-    const lightBoxSoure = photos.map((photo, key) => photo.link.href )
-    console.log(lightBoxSoure)
+    const lightBoxSoure = photos.map((photo, key) => photo.link.href)
+
 
     return (
         <section className="photo-grid content__section" id="photo">

@@ -25,7 +25,7 @@
 }
 
 .service__list-item_span {
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .service__list {
@@ -58,11 +58,11 @@
     border-radius: 10px;
     box-shadow: 0 3px 22px 0 rgb(0 0 0 / 15%);
   }
+
   .service__img {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     border-bottom-left-radius: 0;
-
   }
 }
 

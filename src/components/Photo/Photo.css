@@ -45,7 +45,7 @@
 @media screen and (max-width: 1000px) {
   .photo-grid_container {
     grid-template-columns: 1fr 1fr;
-     row-gap: 8px;
+    row-gap: 8px;
     column-gap: 0px;
   }
   .photo-grid__btn:nth-of-type(3) {

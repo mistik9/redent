@@ -23,13 +23,6 @@ function Price() {
         )}
         <img className="price__img" src={pulpitis} alt="лечение"></img>
         {price_pulpitis.map(i =>
-          <li className="price__list-item"key={i.name}>
-            <p calss="price__name">{i.name}</p>
-            <p className="price__value"> {i.cost}</p>
-          </li>
-        )}
-        <img className="price__img" src={clean} alt="проф гигиена"></img>
-        {price_pulpitis.map(i =>
           <li className="price__list-item" key={i.name}>
             <p calss="price__name">{i.name}</p>
             <p className="price__value"> {i.cost}</p>

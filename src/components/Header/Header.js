@@ -1,4 +1,4 @@
-import logo from "../../image/logo.png";
+import logo from "../../image/logoza-651bdde053c63/logoza-ru-hd.png";
 import "./Header.css";
 import call from "../../image/icons8-whatsapp-32.png";
 import whatsapp from "../../image/icons8-whatsapp-48.png";
@@ -9,17 +9,22 @@ function Header() {
       <a href="#">
         <img className="header__logo" src={logo} alt="Логотип" />
       </a>
-      <ul className="header__items header__items_adress">
+      <ul className="header__items">
         <li className="header__item">
-          <a href="https://wa.me/79620583310?text=" target="_blank">
-            <img className="header__item_call" src={whatsapp} />
+          <a className="header__item_call-link" href="https://wa.me/79620583310?text=" target="_blank" rel="noreferrer">
+            <img className="header__item_call" src={whatsapp} alt="иконка whatsapp"/>
           </a>
-          <a className="header__item_call-link" href="tel:+73812633310" target="_blank">
-            <img className="header__item_call" src={call} />
-            тел. 63-33-10
+          <a className="header__item_call-link" href="tel:+79620583310" target="_blank" rel="noreferrer">
+            +7(962)058-33-10
           </a>
         </li>
-        <li className="header__item">г. Омск ул. Пригородная 23/2</li>
+        <li className="header__item">
+          <a className="header__item_call-link" href="tel:+73812633310" target="_blank" rel="noreferrer">
+            <img className="header__item_call" src={call} alt="иконка трубки"/>
+
+          </a>
+          <a className="header__item_call-link" href="tel:+73812633310" target="_blank" rel="noreferrer"> тел. 63-33-10</a>
+        </li>
       </ul>
       <ul className="header__items header__items_duty">
         <li className="header__item">пн-пт 10:00 - 19:00</li>
@@ -28,7 +33,6 @@ function Header() {
       <a href="tel:+73812633310" className="header__btn">
         Запись на прием
       </a>
-
     </header>
   );
 }

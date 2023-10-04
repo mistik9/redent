@@ -10,7 +10,6 @@
   box-shadow: 0 3px 22px 0 rgb(0 0 0 / 25%);
   transition: all 0.5s ease-out;
   color: #fff;
-
 }
 
 .nav__list {
@@ -20,7 +19,6 @@
   margin: 0 auto;
   padding: 20px 0;
   transition: top 0.3s;
-
 }
 
 .nav__close {
@@ -37,7 +35,6 @@
   position: absolute;
   right: 10px;
   top: 10px;
-
 }
 
 .nav__list-item {
@@ -45,7 +42,7 @@
   list-style: none;
   color: #000000;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 16px;
   line-height: 16px;
   margin-left: 40px;
@@ -67,12 +64,10 @@
   position: absolute;
   right: 18px;
   top: 18px;
-
 }
 
 .nav__menu_hide {
   display: none;
-
 }
 
 .nav__menu-line {

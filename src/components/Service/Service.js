@@ -13,7 +13,7 @@ function Service() {
             <div className="service__item">
                 <img className="service__img" src={caries} alt="кариес"></img>
                 <ul className="service__list">
-                    <h3 className="service__subtitle">Террапия(лечение)</h3>
+                    <h3 className="service__subtitle">Терапия(лечение)</h3>
                     <li className="service__list-item">
                         <span className="service__list-item_span">Кариес</span> – поражение
                         и разрушение зубной эмали.

@@ -1,4 +1,4 @@
-import logo from "../../image/logoza-651bdde053c63/logoza-ru-hd.png";
+import logo from "../../image/logoza-ru-hd.png";
 import "./Footer.css";
 import call from "../../image/icons8-whatsapp-32.png"
 import whatsapp from "../../image/icons8-whatsapp-48.png"

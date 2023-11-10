@@ -10,6 +10,8 @@
 
 # production
 /build
+build.zip
+build (2).zip
 
 # misc
 .DS_Store

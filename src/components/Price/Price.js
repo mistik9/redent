@@ -16,11 +16,12 @@ import {
 import React from "react";
 import "./Price.css";
 
-function Price() {
+function Price({openPopup}) {
   const [easter, setEaster] = React.useState(therapy);
 
   function onTherapyClick() {
     setEaster(clean);
+    openPopup()
   }
 
   return (

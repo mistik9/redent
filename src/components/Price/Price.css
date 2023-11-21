@@ -5,7 +5,21 @@
 .price__img {
   max-width: 50px;
   margin-top: 14px;
+
 }
+
+/* .price__img:first-child {
+  background-image: url(../../image/icon6.png);
+  background-size: contain;
+  background-position: center;
+}
+
+.price__img:first-child:hover {
+  background-color: #ffffff;
+  background-image: url(../../image/tooth_10299303.png);
+  background-size: contain;
+  background-position: center;
+} */
 
 .price__list-item {
   list-style: none;

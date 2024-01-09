@@ -1,7 +1,7 @@
-import logo from "../../image/logoza-ru-hd.png";
+import logo from "../../image/logoza-ru-hd.svg";
 import "./Footer.css";
-import call from "../../image/icons8-whatsapp-32.png"
-import whatsapp from "../../image/icons8-whatsapp-48.png"
+import call from "../../image/icons8-whatsapp-32.svg"
+import whatsapp from "../../image/icons8-whatsapp-48.svg"
 
 function Footer() {
   return (

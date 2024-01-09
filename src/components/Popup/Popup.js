@@ -1,6 +1,6 @@
 import React from "react";
 import "./Popup.css";
-import logo from "../../image/logoza-ru-hd.png";
+import logo from "../../image/logoza-ru-hd.svg";
 
 function Popup({isOpen,  onClose }) {
 

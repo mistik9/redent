@@ -1,10 +1,10 @@
-import therapy from "../../image/icon6.png";
-import clean from "../../image/icon3.png";
-import surg from "../../image/icon4.png";
-import casts from "../../image/icon5.png";
-import imp from "../../image/icon7.png";
-import other from "../../image/icon.png";
-import pulpitis from "../../image/icon1.png";
+import therapy from "../../image/icon6.svg";
+import clean from "../../image/icon3.svg";
+import surg from "../../image/icon4.svg";
+import casts from "../../image/icon5.svg";
+import imp from "../../image/icon7.svg";
+import other from "../../image/icon.svg";
+import pulpitis from "../../image/icon1.svg";
 import {
   price_therapy,
   price_pulpitis,

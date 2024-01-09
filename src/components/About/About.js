@@ -4,9 +4,9 @@ import "./About.css"
 function About() {
   return (
     <section className="about" id="about">
-      <h2 className="section__title section__title_about">ReDent</h2>
+      <h1 className="section__title section__title_about">ReDent</h1>
       <div className="about__img"></div>
-      <h3 className="section__subtitle">С заботой о Вашей улыбке</h3>
+      <h2 className="section__subtitle">С заботой о Вашей улыбке</h2>
       <p className="section__text">
         Стоматологическая клиника Redent – это качественное и доступное
         лечение зубов. Комфорт, безопасность и отсутствие боли – это не

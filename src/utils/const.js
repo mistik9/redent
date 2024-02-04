@@ -60,7 +60,7 @@ export const price_therapy = [
 export const price_pulpitis = [
     {
         name: "Лечение пульпита: одноканальный зуб",
-        cost: "от 6 400₽"
+        cost: "от 6 100₽"
     },
     {
         name: "Лечение пульпита: двухканальный зуб",

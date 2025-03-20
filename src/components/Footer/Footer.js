@@ -34,10 +34,11 @@ function Footer() {
       </ul>
       <ul className="header__items">
         <li className="header__item">пн-пт 10:00 - 19:00</li>
-        <li className="header__item">сб 10:00 - 15:00</li>
+        <li className="header__item">сб 10:00 - 17:00</li>
+   
       </ul>
       <a href="tel:+73812633310" className="header__btn">Запись на прием</a>
     </footer>
   )
 }
-export default Footer
+export default Footer 

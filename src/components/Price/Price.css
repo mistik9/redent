@@ -1,4 +1,4 @@
-.price__list {
+/* .price__list {
   padding: 0 40px;
 }
 
@@ -6,7 +6,7 @@
   max-width: 50px;
   margin-top: 14px;
 
-}
+} */
 
 /* .price__img:first-child {
   background-image: url(../../image/icon6.svg);
@@ -21,7 +21,7 @@
   background-position: center;
 } */
 
-.price__list-item {
+/* .price__list-item {
   list-style: none;
   display: flex;
   align-items: baseline;
@@ -53,5 +53,98 @@
   .price__img {
     max-width: 30px;
     margin-right: 1px;
+  }
+} */
+
+/* Стилизация прайс-листа в стиле Material UI table с фирменными цветами */
+
+.price__list {
+  padding: 0 40px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px 0 rgb(62 75 148 / 10%), 0 1.5px 10px 0 rgb(67 161 208 / 8%);
+  margin: 32px auto;
+  /* max-width: 700px; */
+  overflow: hidden;
+}
+
+.price__list-item {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #e3e8f0;
+  padding: 18px 0;
+  font-size: 16px;
+  transition: background 0.2s;
+  background: transparent;
+}
+
+.price__list-item:last-child {
+  border-bottom: none;
+}
+
+.price__list-item:hover,
+.price__list-item:focus-within {
+  background: rgba(67, 161, 208, 0.06);
+}
+
+.price__img {
+  max-width: 40px;
+  margin-top: 20px;
+  vertical-align: middle;
+  border-radius: 6px;
+  background: #f5f7fa;
+  box-shadow: 0 1px 4px 0 rgb(67 161 208 / 10%);
+}
+
+.price__img {
+  width: 40px;
+  height: 40px;
+  margin-right: 16px;
+  object-fit: contain;
+  border-radius: 12px;
+  background: #f5f7fa;
+  box-shadow: 0 2px 8px 0 rgb(67 161 208 / 10%);
+  display: block;
+  padding: 4px;
+  transition: box-shadow 0.2s, transform 0.2s;
+  border: 1.5px solid #e3e8f0;
+}
+
+.price__img:hover,
+.price__img:focus {
+  box-shadow: 0 6px 18px 0 rgb(67 161 208 / 18%);
+  transform: scale(1.07);
+  border-color: #43a1d0;
+}
+.price__value {
+  margin: 0;
+  white-space: nowrap;
+  font-weight: 600;
+  color: #43a1d0;
+  font-size: 17px;
+  padding-left: 16px;
+}
+
+@media screen and (max-width: 1000px) {
+  .price__list {
+    padding: 0 10px;
+    max-width: 98vw;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .price__list-item {
+    font-size: 14px;
+    padding: 10px 0;
+  }
+  .price__img {
+    max-width: 28px;
+    margin-right: 6px;
+  }
+  .price__value {
+    font-size: 15px;
+    padding-left: 8px;
   }
 }

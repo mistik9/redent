@@ -1,4 +1,4 @@
-.header {
+/* .header {
   display: grid;
   grid-template-columns: 1fr auto auto auto;
   padding: 20px 20px 0 20px;
@@ -112,5 +112,177 @@
     .header__items {
     font-size: 16px;
     }
+  }
+} */
+
+/* Универсальные БЭМ-стили для header, footer и переиспользуемых элементов */
+
+.app-logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+.app-logo__img {
+  max-width: 142px;
+  min-height: 33px;
+  display: block;
+}
+
+.app-contacts {
+  display: grid;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+}
+.app-contacts__item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.app-contacts__link {
+  text-decoration: none;
+  color: #3e4b94;
+  display: flex;
+  align-items: center;
+  padding: 6px 12px;
+  border-radius: 4px;
+  transition: background 0.2s, color 0.2s;
+  font-weight: 500;
+
+  cursor: pointer;
+}
+.app-contacts__link:hover,
+.app-contacts__link:focus {
+  background: rgba(67, 161, 208, 0.08);
+  color: #43a1d0;
+  text-decoration: none;
+}
+.app-contacts__icon {
+  width: 22px;
+  height: 22px;
+  margin-right: 6px;
+  object-fit: contain;
+  display: inline-block;
+}
+
+.app-schedule {
+  display: grid;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 8px;
+  font-size: 0.9rem;
+  color: #2d355e;
+  opacity: 0.8;
+}
+.app-schedule__item {
+  padding: 4px 10px;
+  border-radius: 4px;
+  background: #f5f7fa;
+}
+
+.app-btn {
+  border-radius: 24px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  display: inline-block;
+  text-align: center;
+  height: 44px;
+  max-width: 150px;
+  line-height: 44px;
+  padding: 0 28px;
+  white-space: nowrap;
+  background: linear-gradient(284deg, #3e4b94, #43a1d0);
+  box-shadow: 0 3px 22px 0 rgb(67 161 208 / 18%), 0 2px 8px 0 rgb(62 75 148 / 12%), 0 1.5px 4px 0 rgb(0 0 0 / 10%);
+  transition: background 0.3s, box-shadow 0.3s, transform 0.12s;
+  border: none;
+  outline: none;
+  transform: translateY(0);
+  cursor: pointer;
+}
+.app-btn:hover,
+.app-btn:focus {
+  background: linear-gradient(32deg, #3e4b94, #43a1d0);
+  box-shadow: 0 6px 24px 0 rgb(67 161 208 / 28%), 0 4px 16px 0 rgb(62 75 148 / 18%);
+  color: #fff;
+  transform: translateY(-2px) scale(1.03);
+}
+
+/* Контейнер header/footer */
+.app-header,
+.app-footer {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  align-items: center;
+  justify-items: center;
+  gap: 32px;
+  padding: 16px 32px;
+  background: #fff;
+  border-radius: 0 0 12px 12px;
+  box-shadow: 0px 2px 4px -1px rgb(0 0 0 / 10%), 0px 4px 5px 0px rgb(0 0 0 / 8%);
+  min-height: 72px;
+}
+
+/* Адаптивность */
+@media screen and (max-width: 1000px) {
+  .app-header,
+  .app-footer {
+    gap: 16px;
+    padding: 12px 16px;
+    min-height: 64px;
+    flex-wrap: wrap;
+  }
+.app-schedule {
+  gap:0
+}
+}
+
+@media screen and (max-width: 796px) {
+  .app-header,
+  .app-footer {
+    grid-template-columns: repeat(2, auto);
+    gap: 12px;
+    padding: 10px 8px;
+    min-height: 56px;
+  }
+ 
+  .app-contacts {
+       font-size: 0.8rem;
+       grid-row-start: 2;
+  }
+  .app-btn {
+    max-width: 110px;
+    font-size: 14px;
+    padding: 0 18px;
+    height: 40px;
+    line-height: 40px;
+   
+  }
+  .app-schedule {
+     font-size: 14px;
+     grid-row-start: 2;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .app-header,
+  .app-footer {
+    padding: 8px 4px;
+    min-height: 48px;
+    border-radius: 0 0 8px 8px;
+    gap: 6px;
+  }
+
+  .app-btn {
+    font-size: 13px;
+    padding: 0 10px;
+
+  }
+  .app-schedule__item {
+    font-size: 0.75rem;
+    padding: 2px 6px;
   }
 }

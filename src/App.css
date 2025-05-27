@@ -1,5 +1,5 @@
 
-@import url(./vendor/fonts/fonts.css);
+/* @import url(./vendor/fonts/fonts.css); */
 
 .body {
   width: 100%;
@@ -12,6 +12,7 @@
   width: 100%;
   margin: 0 auto;
   background-color: #f8f9fa;
+  position: relative;
 }
 
 /* #43a1d0 #3e4b94*/
@@ -30,10 +31,11 @@
 .section__title {
   color: #3e4b94;
   font-weight: 700;
-  font-size: 54px;
+  font-size: 2rem;
   line-height: 58px;
-  margin: 0 0 0 40px;
-  margin-bottom: 30px;
+  margin: 0 ;
+  text-align: center;
+
 }
 
 .section__title_about {
@@ -62,9 +64,12 @@
   margin: 0 auto;
 }
 
+
+
 @media screen and (max-width: 1000px) {
   .section__text {
     padding: 20px 20px 0 20px;
     margin: 0;
   }
+
 }

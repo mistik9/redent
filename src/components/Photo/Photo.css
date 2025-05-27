@@ -1,4 +1,4 @@
-.photo-grid_container {
+/* .photo-grid_container {
   display: grid;
   max-width: 100%;
   grid-template-columns: 1fr 1fr 1fr;
@@ -63,6 +63,95 @@
     grid-row-end: 5;
   }
 
+  .photo-grid__btn:nth-of-type(5) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+} */
+
+/* Стилизация фотосетки в стиле Material UI с фирменными цветами */
+
+.photo-grid_container {
+  display: grid;
+  max-width: 100%;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  row-gap: 20px;
+  column-gap: 16px;
+  grid-auto-flow: dense;
+  box-sizing: border-box;
+  padding: 24px 16px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0px 4px 24px 0px rgb(62 75 148 / 10%), 0px 1.5px 10px 0px rgb(67 161 208 / 8%);
+}
+
+.photo-grid__item {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px 0 rgb(67 161 208 / 10%);
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.photo-grid__btn {
+  border: none;
+  background-color: transparent;
+  width: 100%;
+  padding: 0;
+  border-radius: 8px;
+  box-shadow: none;
+  transition: box-shadow 0.2s, transform 0.2s;
+  cursor: pointer;
+}
+
+.photo-grid__btn:focus,
+.photo-grid__btn:hover {
+  box-shadow: 0 6px 24px 0 rgb(67 161 208 / 18%);
+  outline: none;
+  transform: translateY(-2px) scale(1.03);
+}
+
+.photo-grid__btn:nth-of-type(2) {
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.photo-grid__btn:nth-of-type(7) {
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+
+.photo-grid__btn:nth-of-type(8) {
+  grid-row-start: 3;
+  grid-row-end: 5;
+}
+
+.photo-grid__btn:nth-of-type(5) {
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+
+@media screen and (max-width: 1000px) {
+  .photo-grid_container {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 12px;
+    column-gap: 8px;
+    padding: 16px 4px;
+  }
+  .photo-grid__btn:nth-of-type(3) {
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  .photo-grid__btn:nth-of-type(7) {
+    grid-row-start: 2;
+    grid-row-end: 4;
+  }
+  .photo-grid__btn:nth-of-type(8) {
+    grid-row-start: 3;
+    grid-row-end: 5;
+  }
   .photo-grid__btn:nth-of-type(5) {
     grid-column-start: 1;
     grid-column-end: 3;

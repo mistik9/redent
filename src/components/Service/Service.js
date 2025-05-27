@@ -4,6 +4,7 @@ import crown from "../../image/pic15.webp";
 import cast from "../../image/pic5.jpeg";
 import surgery from "../../image/pic13.webp";
 import cleaning from "../../image/pic16.webp";
+import otherImplant from "../../image/pic18.webp";
 import "./Service.css"
 
 function Service() {
@@ -11,9 +12,12 @@ function Service() {
         <section className="service content__section " id="service">
             <h2 className="section__title">Услуги</h2>
             <div className="service__item">
+                <div className="service__img-container">
                 <img className="service__img" src={caries} alt="кариес"></img>
-                <ul className="service__list">
+                </div>
                     <h3 className="service__subtitle">Терапия(лечение)</h3>
+                <ul className="service__list">
+                
                     <li className="service__list-item">
                         <span className="service__list-item_span">Кариес</span> – поражение
                         и разрушение зубной эмали.
@@ -29,9 +33,13 @@ function Service() {
                 </ul>
             </div>
             <div className="service__item">
+                <div className="service__img-container">
                 <img className="service__img" src={implant} alt="имплантация"></img>
+                <img className="service__img" src={otherImplant} alt="имплантация"></img>
+</div>
+    <h3 className="service__subtitle">Имплантация </h3>
                 <ul className="service__list">
-                    <h3 className="service__subtitle">Имплантация </h3>
+                
                     <li className="service__list-item">
                         <span className="service__list-item_span">
                             Одномоментная имплантация
@@ -59,12 +67,13 @@ function Service() {
                 </ul>
             </div>
             <div className="service__item">
-                <div>
+                <div className="service__img-container">
                     <img className="service__img" src={crown} alt="ортопедия"></img>
                     <img className="service__img" src={cast} alt="слепки"></img>
                 </div>
+                      <h3 className="service__subtitle">Ортопедия (протезирование) </h3>
                 <ul className="service__list">
-                    <h3 className="service__subtitle">Ортопедия (протезирование) </h3>
+              
                     <li className="service__list-item">
                         <span className="service__list-item_span">
                             Металлокерамическая коронка
@@ -105,18 +114,22 @@ function Service() {
                 </ul>
             </div>
             <div className="service__item">
-                <img className="service__img" src={surgery} alt="хирургия"></img>
+                <div className="service__img-container">
+                <img className="service__img" src={surgery} alt="хирургия"></img></div>
+                       <h3 className="service__subtitle">Хирургия</h3>
                 <ul className="service__list">
-                    <h3 className="service__subtitle">Хирургия</h3>
+             
                     <li className="service__list-item">
                         Удаление зубов разной степени сложности
                     </li>
                 </ul>
             </div>
             <div className="service__item">
-                <img className="service__img" src={cleaning} alt="профгигиена"></img>
+                  <div className="service__img-container">
+                <img className="service__img" src={cleaning} alt="профгигиена"></img></div>
+                            <h3 className="service__subtitle">Профессиональная чистка зубов</h3>
                 <ul className="service__list">
-                    <h3 className="service__subtitle">Профессиональная чистка зубов</h3>
+        
                     <li className="service__list-item">
                         Удаление твердого зубного камня при помощи ультразвука
                     </li>

@@ -1,4 +1,4 @@
-.service {
+/* .service {
   width: 100%;
   display: grid;
   box-sizing: border-box;
@@ -78,5 +78,126 @@
   .service__subtitle {
     margin: 0 0 20px 0;
     font-size: 25px;
+  }
+} */
+
+/* Стилизация карточек услуг в стиле Material UI с фирменными цветами */
+
+.service {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px 0;
+  background: #f5f7fa;
+}
+
+.service__item {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px 0 rgb(62 75 148 / 10%), 0 1.5px 10px 0 rgb(67 161 208 / 8%);
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: flex-start;
+  gap: 10px 32px;
+  padding: 20px;
+  margin-bottom: 32px;
+  width: 100%;
+
+  box-sizing: border-box;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.service__item:hover,
+.service__item:focus-within {
+  box-shadow: 0 8px 32px 0 rgb(67 161 208 / 18%);
+  transform: translateY(-2px) ;
+}
+
+.service__img {
+  width: 160px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px 0 rgb(67 161 208 / 10%);
+  margin-bottom: 12px;
+  background: #f0f4fa;
+}
+
+.service__img-container {
+  display: grid;
+  gap: 12px;
+
+  grid-row: 2;
+}
+
+.service__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  flex: 1;
+  grid-column: 2;
+}
+
+.service__subtitle {
+  font-size: 20px;
+  font-weight: 600;
+  color: #3e4b94;
+  margin: 0;
+  letter-spacing: 0.5px;
+  grid-column: 2;
+}
+
+.service__list-item {
+  font-size: 16px;
+  color: #2d355e;
+  margin-bottom: 8px;
+  line-height: 1.5;
+  border-left: 3px solid #43a1d0;
+  padding-left: 12px;
+  background: rgba(67, 161, 208, 0.04);
+  border-radius: 4px;
+}
+
+.service__list-item_span {
+  font-weight: 600;
+  color: #3e4b94;
+}
+
+
+
+@media screen and (max-width: 900px) {
+}
+
+@media screen and (max-width: 600px) {
+  .service {
+    padding: 16px 0;
+  }
+
+  .service__item {
+    padding: 12px 4px 8px 4px;
+    margin-bottom: 18px;
+    grid-template-columns: 1fr;
+  }
+  .service__img {
+    height: 100px;
+  }
+
+  .service__img-container {
+    grid-column: auto;
+    grid-template-columns: auto auto;
+    justify-content: center;
+  }
+  .service__subtitle {
+    font-size: 16px;
+    grid-column: auto;
+    text-align: center;
+  }
+
+  .service__list {
+    grid-column: auto;
+  }
+  .service__list-item {
+    font-size: 14px;
+    padding-left: 8px;
   }
 }

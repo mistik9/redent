@@ -1,119 +1,146 @@
 .nav {
   display: flex;
+  align-items: center;
   width: 100%;
-  min-height: 66px;
-  background-color: #43a1d0;
-  grid-column-start: 1;
-  grid-column-end: 5;
-  position: relative;
+  min-height: 64px;
   background: linear-gradient(284deg, #3e4b94, #43a1d0);
-  box-shadow: 0 3px 22px 0 rgb(0 0 0 / 25%);
-  transition: all 0.5s ease-out;
+  box-shadow: 0px 2px 4px -1px rgb(0 0 0 / 20%), 0px 4px 5px 0px rgb(0 0 0 / 14%), 0px 1.5px 10px 0px rgb(0 0 0 / 12%);
   color: #fff;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 1100;
+  border-radius: 0 0 8px 8px;
+  transition: box-shadow 0.3s;
 }
 
 .nav__list {
   display: flex;
+  align-items: center;
   justify-content: center;
   list-style: none;
   margin: 0 auto;
-  padding: 20px 0;
-  transition: top 0.3s;
-}
-
-.nav__close {
-  display: none;
-  border: none;
   padding: 0;
-  background-image: url(../../image/close.svg);
-  background-size: cover;
-  width: 40px;
-  height: 40px;
-  background-color: transparent;
-  align-self: flex-end;
-  cursor: pointer;
-  position: absolute;
-  right: 10px;
-  top: 10px;
+  gap: 24px;
 }
 
 .nav__list-item {
-  text-decoration: none;
-  list-style: none;
-  color: #000000;
-  font-style: normal;
-  font-weight: 600;
+  color: #fff;
+  font-weight: 500;
   font-size: 16px;
-  line-height: 16px;
-  margin-left: 40px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: background 0.2s, color 0.2s;
   cursor: pointer;
-  margin-left: 20px;
-  transition: all 0.5s ease-out;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  background: none;
+  box-shadow: none;
+  position: relative;
+}
+
+.nav__list-item:hover,
+.nav__list-item:focus {
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+  text-decoration: none;
 }
 
 .nav__list-item:first-child {
-  margin: 0;
-}
-
-.nav__list-item:hover {
-  text-decoration: underline;
+  margin-left: 0;
 }
 
 .nav__menu {
   display: none;
   position: absolute;
   right: 18px;
-  top: 18px;
+  top: 14px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1300;
+  /* Для анимации иконки */
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav__menu_hide {
-  display: none;
+.nav__menu_open {
+  transform: rotate(90deg) scale(1.1);
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav__menu-line {
   display: none;
-  margin-bottom: 9px;
-  cursor: pointer;
-  border-bottom: 4px solid #000000;
-  width: 33px;
+  width: 32px;
+  height: 4px;
+  background: #fff;
+  border-radius: 2px;
+  margin: 6px 0;
+  transition: background 0.2s, transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media screen and (max-width: 1000px) {
   .nav {
+    padding: 0 8px;
+    min-height: 56px;
   }
 
   .nav__menu {
-    background-color: transparent;
-    border: none;
     display: block;
-  }
-  .nav__menu_hide {
-    display: none;
-  }
-
-  .nav__list {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-  }
-
-  .nav__list_hide {
-    display: none;
-  }
-
-  .nav__list-item {
-    padding: 20px;
-    font-size: 25px;
-    margin: 0;
-  }
-
-  .nav__menu-item:first-child {
-    margin: 0;
   }
   .nav__menu-line {
     display: block;
   }
-  .nav__close {
+
+  .nav__menu_open .nav__menu-line:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+  }
+  .nav__menu_open .nav__menu-line:nth-child(2) {
+    opacity: 0;
+  }
+  .nav__menu_open .nav__menu-line:nth-child(3) {
+    transform: translateY(-10px) rotate(-45deg);
+  }
+
+  .nav__list {
+    flex-direction: column;
+    align-items: flex-start;
+    background: linear-gradient(284deg, #3e4b94, #43a1d0);
+    position: absolute;
+    top: 56px;
+    left: 0;
+    width: 100%;
+    box-shadow: 0px 4px 20px 0px rgb(0 0 0 / 18%);
+    border-radius: 8px;
+    padding: 16px 0;
+    gap: 0;
+    z-index: 1200;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateY(0);
+    transition: opacity 0.35s cubic-bezier(0.4, 0, 0.2, 1), transform 0.35s cubic-bezier(0.4, 0, 0.2, 1), visibility 0.35s;
+  }
+
+  .nav__list_hide {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: translateY(-24px);
+    transition: opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1), transform 0.25s cubic-bezier(0.4, 0, 0.2, 1), visibility 0.25s;
+  }
+
+  .nav__list-item {
+    width: 100%;
+    text-align: left;
+    padding: 16px 24px;
+    font-size: 18px;
+    border-radius: 0;
+    margin: 0;
+  }
+
+  .nav__menu-line {
     display: block;
   }
 }

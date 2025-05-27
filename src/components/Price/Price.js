@@ -28,6 +28,7 @@ function Price({openPopup}) {
     <section className="priсe content__section " id="price">
       <h2 className="section__title">Стоимость услуг</h2>
       <ul className="price__list">
+        
         <img
           className="price__img"
           src={easter}

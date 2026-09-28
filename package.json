@@ -22,9 +22,15 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+     "build": "react-scripts build && react-snap",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
+  },
+    "reactSnap": {
+    "source": "build",
+    "minifyHtml": {
+      "collapseWhitespace": false
+    }
   },
   "eslintConfig": {
     "extends": [

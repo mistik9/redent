@@ -1,7 +1,6 @@
 import logo from '../../image/logoza-ru-hd.svg';
 import './Header.css';
 import call from '../../image/icons8-положить-трубку-50.png';
-import talegram from '../../image/icons8-телеграм-50.png';
 
 /**
  * Универсальный компонент логотипа (можно использовать и в футере)
@@ -21,8 +20,8 @@ export function AppContacts({ className = '' }) {
   return (
     <ul className={`app-contacts${className ? ' ' + className : ''}`}>
       <li className="app-contacts__item">
-        <a className="app-contacts__link" href="https://t.me/+79620583310" target="_blank" rel="noreferrer">
-          <img className="app-contacts__icon app-contacts__icon--whatsapp" src={talegram} alt="иконка telegram" />
+        <a className="app-contacts__link" href="https://max.ru/u/f9LHodD0cOLXQyG_UpSEtP1X3HCb7XNuoE77GTg5nLQyw_hqVTzG78rTNmo" target="_blank" rel="noreferrer">
+          <img className="app-contacts__icon " src="https://maxicons.ru/icons/MAX.svg" alt="иконка max" />
           +7(962)058-33-10
         </a>
       </li>

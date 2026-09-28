@@ -166,6 +166,11 @@
   display: inline-block;
 }
 
+.app-contacts__icon--max {
+  background: url('https://maxicons.ru/icons/MAX.svg') center/contain no-repeat;
+
+}
+
 .app-schedule {
   display: grid;
   list-style: none;

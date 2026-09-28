@@ -1,88 +1,3 @@
-/* .service {
-  width: 100%;
-  display: grid;
-  box-sizing: border-box;
-  row-gap: 20px;
-  padding: 0 40px;
-}
-
-.service__img {
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-  box-shadow: 0 3px 22px 0 rgb(0 0 0 / 15%);
-  width: 100%;
-  object-fit: cover;
-  min-height: 424px;
-}
-
-.service__item {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 32px;
-  border-radius: 10px;
-  box-shadow: 0 3px 22px 0 rgb(0 0 0 / 15%);
-  background-position: center;
-}
-
-.service__list-item_span {
-  font-weight: 600;
-}
-
-.service__list {
-  list-style: none;
-}
-
-.service__list-item {
-  margin: 0 20px 10px 0;
-}
-
-.service__subtitle {
-  color: #3e4b94;
-  margin: 0 0 20px 0;
-  font-size: 32px;
-}
-
-.service__text {
-  margin: 0;
-}
-
-@media screen and (max-width: 1000px) {
-  .service {
-    padding: 0 20px;
-  }
-
-  .service__item {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 18px;
-    border-radius: 10px;
-    box-shadow: 0 3px 22px 0 rgb(0 0 0 / 15%);
-  }
-
-  .service__img {
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    border-bottom-left-radius: 0;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .service {
-    padding: 0 10px;
-  }
-
-  .service__item {
-    gap: 10px;
-  }
-
-  .service__subtitle {
-    margin: 0 0 20px 0;
-    font-size: 25px;
-  }
-} */
-
-/* Стилизация карточек услуг в стиле Material UI с фирменными цветами */
-
 .service {
   display: flex;
   flex-direction: column;
@@ -96,13 +11,16 @@
   border-radius: 16px;
   box-shadow: 0 4px 24px 0 rgb(62 75 148 / 10%), 0 1.5px 10px 0 rgb(67 161 208 / 8%);
   display: grid;
-  grid-template-columns: auto 1fr;
-  align-items: flex-start;
-  gap: 10px 32px;
-  padding: 20px;
+  grid-template-columns: 220px 1fr;
+  grid-template-areas:
+    'image title'
+    'image intro'
+    'image list';
+  align-items: start;
+  gap: 8px 32px;
+  padding: 24px;
   margin-bottom: 32px;
   width: 100%;
-
   box-sizing: border-box;
   transition: box-shadow 0.2s, transform 0.2s;
 }
@@ -110,41 +28,47 @@
 .service__item:hover,
 .service__item:focus-within {
   box-shadow: 0 8px 32px 0 rgb(67 161 208 / 18%);
-  transform: translateY(-2px) ;
-}
-
-.service__img {
-  width: 160px;
-  height: 120px;
-  object-fit: cover;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px 0 rgb(67 161 208 / 10%);
-  margin-bottom: 12px;
-  background: #f0f4fa;
+  transform: translateY(-2px);
 }
 
 .service__img-container {
-  display: grid;
+  grid-area: image;
+  display: flex;
+  flex-direction: column;
   gap: 12px;
-
-  grid-row: 2;
 }
 
-.service__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  flex: 1;
-  grid-column: 2;
+.service__img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px 0 rgb(67 161 208 / 10%);
+  background: #f0f4fa;
 }
 
 .service__subtitle {
-  font-size: 20px;
+  grid-area: title;
+  font-size: 22px;
   font-weight: 600;
   color: #3e4b94;
   margin: 0;
   letter-spacing: 0.5px;
-  grid-column: 2;
+}
+
+.service__intro {
+  grid-area: intro;
+  margin: 0;
+  color: #444;
+  font-size: 0.95em;
+  line-height: 1.5;
+}
+
+.service__list {
+  grid-area: list;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .service__list-item {
@@ -163,9 +87,52 @@
   color: #3e4b94;
 }
 
+.service__list-item_button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 8px 0;
+  cursor: pointer;
+  text-align: left;
+  font: inherit;
+  color: inherit;
+}
 
+.service__list-item_arrow {
+  transition: transform 0.25s ease;
+  margin-left: 8px;
+  flex-shrink: 0;
+}
+
+.service__list-item_arrow--open {
+  transform: rotate(180deg);
+}
+
+.service__accordion {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+  padding: 0;
+}
+
+.service__accordion--open {
+  max-height: 300px;
+  padding: 0 0 8px 0;
+}
+
+.service__accordion-text {
+  margin: 0;
+  color: #555;
+  font-size: 0.95em;
+}
 
 @media screen and (max-width: 900px) {
+  .service__item {
+    grid-template-columns: 180px 1fr;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -174,28 +141,32 @@
   }
 
   .service__item {
-    padding: 12px 4px 8px 4px;
+    padding: 12px;
     margin-bottom: 18px;
     grid-template-columns: 1fr;
-  }
-  .service__img {
-    height: 100px;
+    grid-template-areas:
+      'image'
+      'title'
+      'intro'
+      'list';
   }
 
   .service__img-container {
-    grid-column: auto;
-    grid-template-columns: auto auto;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
   }
+
+  .service__img {
+    width: 48%;
+    height: 100px;
+  }
+
   .service__subtitle {
     font-size: 16px;
-    grid-column: auto;
     text-align: center;
   }
 
-  .service__list {
-    grid-column: auto;
-  }
   .service__list-item {
     font-size: 14px;
     padding-left: 8px;
